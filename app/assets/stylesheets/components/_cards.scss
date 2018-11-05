@@ -1,27 +1,61 @@
-.cards {
-  // align-items: center;
+.chat-header {
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  text-align: center;
 }
 
-.card {
+.cards-stupid {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+
+.card-stupid {
+  padding: 10px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-comment {
   width: 500px;
   border-radius: 5px;
   box-shadow: 1px 1px 3px rgb(180, 180, 180);
   padding: 5px 20px;
-  margin: 5px 0;
+  margin: 5px 10px;
+  h2 {
+    margin: 0;
+  }
 }
 
 .right {
   float: right;
-  background-color: green;
   h3 {
     text-align: right;
+    font-size: 14px;
+    color: rgb(235, 235, 235);
   }
 }
 
 .left {
   float: left;
-  background-color: white;
   h3 {
     text-align: left;
+    font-size: 14px;
+    color: rgb(235, 235, 235);
   }
+}
+
+
+.green {
+  background-color: #76e454;
+}
+
+.white {
+  background-color: white;
 }

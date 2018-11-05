@@ -1,17 +1,24 @@
-<h1>Stupid Coach</h1>
-
-<div class="cards">
-  <div class="card right">
-    <h2><%= params[:question] %></h2>
-    <h3>- You</h3>
-  </div>
-  <div class="card left">
-    <h2><%= @answer %></h2>
-    <h3>- Stupid coach</h3>
-  </div>
+<div class="chat-header">
+    <h1>Stupid Coach</h1>
 </div>
-
-
-  <%= link_to "Ask your stupid coach", ask_path, class: "btn btn-primary"%>
-
-
+<div class="cards-stupid">
+    <div class="card-stupid right">
+        <div class="card-content">
+            <div class="card-comment green">
+                <h2><%= params[:question] %></h2>
+            </div>
+            <%= image_tag "yutafujii.jpg", alt: "Yuta", class: "img-circle avatar" %>
+        </div>
+        <h3>- You</h3>
+    </div>
+    <div class="card-stupid left">
+        <div class="card-content">
+            <%= image_tag "yutafujii.jpg", alt: "Yuta", class: "img-circle avatar" %>
+            <div class="card-comment white">
+                <h2><%= @answer %></h2>
+            </div>
+        </div>
+        <h3>- Stupid coach</h3>
+    </div>
+</div>
+<%= link_to "Ask your stupid coach", ask_path, class: "btn btn-primary"%>
