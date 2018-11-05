@@ -1,0 +1,17 @@
+<h1>Stupid Coach</h1>
+
+<div class="cards">
+  <div class="card right">
+    <h2><%= params[:question] %></h2>
+    <h3>- You</h3>
+  </div>
+  <div class="card left">
+    <h2><%= @answer %></h2>
+    <h3>- Stupid coach</h3>
+  </div>
+</div>
+
+
+  <%= link_to "Ask your stupid coach", ask_path, class: "btn btn-primary"%>
+
+
